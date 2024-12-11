@@ -1,0 +1,23 @@
+<div class="sharing__content">
+  <section class="sharing__child">
+    <app-phone></app-phone>
+  </section>
+  <section class="sharing__child">
+    <ng-container [ngTemplateOutlet]="dataT"></ng-container>
+  </section>
+</div>
+
+<ng-template #dataT>
+  <div class="links">
+    <header class="links__header">
+      <h2 class="links__title">Customize your links</h2>
+      <p class="links__description">
+        Add/edit/remove links below and then share all all your profiles with
+        the world!
+      </p>
+    </header>
+    <div class="links__add">
+      <button class="links__cta">+ Add new link</button>
+    </div>
+  </div>
+</ng-template>
