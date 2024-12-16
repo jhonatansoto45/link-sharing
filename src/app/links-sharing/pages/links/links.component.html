@@ -8,16 +8,55 @@
 </div>
 
 <ng-template #dataT>
-  <div class="links">
-    <header class="links__header">
-      <h2 class="links__title">Customize your links</h2>
-      <p class="links__description">
-        Add/edit/remove links below and then share all all your profiles with
-        the world!
-      </p>
-    </header>
-    <div class="links__add">
-      <button class="links__cta">+ Add new link</button>
+  <div class="content">
+    <div class="links">
+      <header class="links__header">
+        <h2 class="links__title">Customize your links</h2>
+        <p class="links__description">
+          Add/edit/remove links below and then share all all your profiles with
+          the world!
+        </p>
+      </header>
+      <div class="links__add">
+        <button class="links__cta">+ Add new link</button>
+      </div>
+    </div>
+    <div class="item">
+      <header class="item__header">
+        <div class="item__title">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 8l16 0" />
+            <path d="M4 16l16 0" />
+          </svg>
+          <span>Link #1</span>
+        </div>
+        <button class="item__remove">Remove</button>
+      </header>
+
+      <form class="item__form">
+        <label for="" class="item__label">
+          <span class="item__span">Platform</span>
+          <div class="drop">
+            <ul class="drop__list"></ul>
+          </div>
+        </label>
+
+        <label for="" class="item__label">
+          <span class="item__span">Link</span>
+        </label>
+      </form>
     </div>
   </div>
 </ng-template>
